@@ -1,0 +1,201 @@
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: rgb(224, 224, 224);
+}
+
+/* HEADER STYLING */
+
+header {
+    background-color: rgb(86, 103, 87);
+    color: white;
+    text-align: center;
+    padding: 30px 30px 30px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/* SEARCH BAR */
+
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+.search input {
+    padding: 10px;
+    border: none;
+    width: 40%;
+    font-size: 15px;
+    outline: none;
+    border-radius: 10px 0 0 10px;
+}
+
+.search button {
+    padding: 10px 20px;
+    background-color: rgb(42, 51, 43);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    width: 10%;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+    transition: all 0.3s ease;
+}
+
+.search button:hover {
+    background-color: rgb(133, 140, 134)
+}
+
+/* MEAL PHOTO STYLING */
+
+.meal-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px;
+}
+
+.meal-item {
+    flex-basis: calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    margin: 10px;
+    padding: 20px 20px 10px;
+    box-shadow: 0 8px 24px rgb(162, 162, 162);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.meal-item:hover {
+    transform: scale(1.05);
+}
+
+.meal-item img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.meal-item h3 {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* POPUP STYLING */
+
+.recipe-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.recipe-container .close-button {
+    font-size: 42px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(86, 103, 87);
+    width: 100%;
+    text-align: right;
+    margin-bottom: 16px;
+    transition: all 0.3s ease;
+}
+
+.recipe-container .close-button:hover {
+    color: rgb(133, 140, 134)
+}
+
+.meal-details-content {
+    overflow-y: auto;
+    max-height: 70vh;
+}
+
+.recipe-title {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.recipe-category {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.recipe-instruct h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.recipe-instruct p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding: 18px;
+}
+
+.recipe-img img {
+    max-width: 50%;
+    display: block;
+    margin: 0 auto 40px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 7px 29px 0;
+}
+
+.recipe-video {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.recipe-video a {
+    padding: 10px 20px;
+    background-color: rgb(86, 103, 87);
+    border: none;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.recipe-video a:hover {
+    background-color: rgb(133, 140, 134);
+}
