@@ -1,7 +1,7 @@
 # RecipeEpic - by Julia Veliquette
 RecipeEpic is a responsive web application that allows users to search for recipes based on ingredients. The site is built using JavaScript, CSS, and HTML and utilizes an API to fetch recipe data.
 
-**Live Demo:** https://jveliquette.github.io/RecipeEpic/
+**Live Demo:** https://recipe-epic.netlify.app
 
 ## Features
 - **Ingredient-Based Search:** Easily find recipes by entering an ingredient of your choice.
